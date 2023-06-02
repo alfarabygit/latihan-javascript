@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+    <p id="text">Hello World!</p>
+    <br>
+    <button id="btn">Change Value</button>
+    <br>
+    <p id="test">Hello World!</p>
+    <br>
+    <button id="btn" onclick="btnFunc()">Change Value</button>
+
+
+    <!-- javascript internal -->
+    <script type="text/javascript">
+        document.getElementById("btn").addEventListener("click", function(){
+        document.getElementById("text").innerHTML="Learning JavaScript";    
+        });
+    </script>
+
+    <!-- javascript external -->
+    <script src="main.js"></script>
+</body>
+</html>
