@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+</head>
+<body>
+<p id="teks1">pertama</p>
+<p id="teks2">kedua</p>
+<p id="teks3">ketiga</p>
+<button onclick="btn1()">Change content</button>
+<br>
+<p id="teks4">keempat</p>
+
+<button onclick="btn2()">Change content</button>
+<br>
+    <script>
+        //membuat function utk event ketika tombol diklik
+        function btn1(){
+            document.getElementById("teks3").innerHTML="Belajar statement javascript";
+        }
+
+        function btn2() {
+            let txt="Test 1,2,3..."
+            document.getElementById("teks4").innerHTML=txt;//memanggil variabel txt di dalam function btn2
+        }
+    </script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
